@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all 0.3s, color 0.3s;
 }
 
 header {
@@ -11,6 +11,7 @@ header {
   align-items: center;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
+  transition: all .4s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -33,6 +34,7 @@ main {
   padding: 2rem;
   display: grid;
   gap: 2rem;
+  transition: all .4s;
 }
 
 section {
@@ -100,4 +102,10 @@ h2 {
 
 .light-mode .project a {
   color: #007cf0;
+}
+
+
+bg-change {
+  background: #111827;
+  ;
 }
