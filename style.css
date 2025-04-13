@@ -17,11 +17,16 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: all 0.3s ease;
+    overflow-x: hidden;
   }
   header {
     text-align: center;
     padding: 2rem;
     color: var(--accent-color);
+  }
+
+  header p {
+    margin: 20px 0px;
   }
   .theme-toggle {
     position: absolute;
@@ -83,4 +88,17 @@
     --bg-color: var(--light-bg);
     --text-color: var(--light-text);
     --card-bg: var(--light-card);
+  }
+
+
+
+  @media screen and (max-width: 600px){
+.theme-toggle{
+  top: 26px;
+  right: -20px;
+}
+header p {
+  display: none;
+}
+    
   }
