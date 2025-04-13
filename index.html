@@ -1,82 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="Assets/favicon-32x32.png " type="image/x-icon">
-    <title>My Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-yH4RMCi3RnU3ylWzR9KZc9U4+qgH1+OrO4UPUo7BIB5hw7J/MiLZlgRIQ+6u1Mv4R8mGq4YYDq1OUmNabzFJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></button>
-    
-    <header>
-        <h1>My Project Portfolio</h1>
-        <p>Explore my web development projects with responsive design and stylish interfaces.</p>
-    </header>
-
-    <section class="section">
-        <h2>Responsive Websites</h2>
-        <div class="projects">
-            <div class="card">
-                <img src="Assets/petie.png" alt="Peties Website">
-                <h3>Peties Website</h3>
-                <p>A modern pet service theme website built using HTML, CSS, and JavaScript with a responsive layout.
-                </p>
-                <a href="https://nextgencodde.github.io/peties-theme/" target="_blank">View Project</a>
-            </div>
-            <div class="card">
-                <img src="Assets/bristo.png" alt="Bristo Bliss">
-                <h3>Bristo Bliss</h3>
-                <p>A sleek restaurant website featuring a smooth UI/UX for a great dining experience online.</p>
-                <a href="https://nextgencodde.github.io/Bristo-bliss/" target="_blank">View Project</a>
-            </div>
-        </div>
+  <header>
+    <h1>My Portfolio</h1>
+    <button id="modeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+  </header>
+  <main>
+    <section id="responsive-websites">
+      <h2>Responsive Websites</h2>
+      <div class="project">
+        <img src="screenshots/peties.png" alt="Peties Screenshot"/>
+        <h3>Peties Website</h3>
+        <p>A clean, responsive pet care website with vibrant visuals and user-friendly layout.</p>
+        <a href="https://nextgencodde.github.io/peties-theme/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+        <img src="screenshots/bristo.png" alt="Bristo Bliss Screenshot"/>
+        <h3>Bristo Bliss</h3>
+        <p>Restaurant theme showcasing elegant design and menu sections in a responsive layout.</p>
+        <a href="https://nextgencodde.github.io/Bristo-bliss/" target="_blank">Visit Site</a>
+      </div>
     </section>
 
-    <section class="section">
-        <h2>Non-Responsive (Desktop Only)</h2>
-        <div class="projects">
-            <div class="card">
-                <img src="Assets/dashboard.png" alt="Dashboard">
-                <h3>Dashboard</h3>
-                <p>A simple, clean admin dashboard layout ideal for data management and analytics display.</p>
-                <a href="https://nextgencodde.github.io/Dashboard/" target="_blank">View Project</a>
-            </div>
-          
-        </div>
+    <section id="non-responsive">
+      <h2>Non-Responsive (Desktop Only)</h2>
+      <div class="project">
+        <img src="screenshots/alma.png" alt="Alma Screenshot"/>
+        <h3>Alma Website</h3>
+        <p>A desktop-focused business layout with clean visual structure and sections.</p>
+        <a href="https://nextgencodde.github.io/Alma/" target="_blank">Visit Site</a>
+      </div>
     </section>
 
-    <section class="section">
-        <h2>Dashboards</h2>
-        <div class="projects">
-            <div class="card">
-                <img src="Assets/alma.png" alt="Alma Website">
-                <h3>Alma Website</h3>
-                <p>A beautiful desktop-only layout showcasing educational content with animated sections.</p>
-                <a href="https://nextgencodde.github.io/Alma/" target="_blank">View Project</a>
-            </div>
-            <div class="card">
-                <img src="Assets/neuron.png" alt="Neuron">
-                <h3>Neuron</h3>
-                <p>Futuristic web dashboard design for managing online systems, with dark theme and bold visuals.</p>
-                <a href="https://nextgencodde.github.io/neuron/" target="_blank">View Project</a>
-            </div>
-            <div class="card">
-                <img src="Assets/techno.png" alt="Techno">
-                <h3>Techno</h3>
-                <p>A tech-focused dashboard UI designed with glowing neon aesthetics and high clarity layout.</p>
-                <a href="https://nextgencodde.github.io/techno/" target="_blank">View Project</a>
-            </div>
-        </div>
+    <section id="dashboards">
+      <h2>Dashboards</h2>
+      <div class="project">
+        <img src="screenshots/dashboard.png" alt="Dashboard Screenshot"/>
+        <h3>Dashboard</h3>
+        <p>A UI dashboard with dark mode styling and charts display for admin panels.</p>
+        <a href="https://nextgencodde.github.io/Dashboard/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+        <img src="screenshots/neuron.png" alt="Neuron Screenshot"/>
+        <h3>Neuron</h3>
+        <p>Clean and bold dashboard template for futuristic projects with sharp design.</p>
+        <a href="https://nextgencodde.github.io/neuron/" target="_blank">Visit Site</a>
+      </div>
+      <div class="project">
+        <img src="screenshots/techno.png" alt="Techno Screenshot"/>
+        <h3>Techno</h3>
+        <p>Tech-focused UI with compact layout and information-driven dashboard.</p>
+        <a href="https://nextgencodde.github.io/techno/" target="_blank">Visit Site</a>
+      </div>
     </section>
+  </main>
 
-    <script src="app.js">
-    </script>
+  <script src="app.js">
+
+  </script>
 </body>
-
 </html>
