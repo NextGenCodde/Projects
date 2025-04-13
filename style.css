@@ -1,11 +1,10 @@
 :root {
-    --bg-color: #111827;
-    --text-color: #adb5bd;
-    --accent-color: #ffffff;
-    --card-bg: #030712;
-    --light-bg: #f5f5f5;
-    --light-text: #111827;
-    --light-card: #ffffff;
+  --bg-color: #111827;
+  --accent-color: #ffffff;
+  --card-bg: #111827;
+  --light-bg: #f5f5f5;
+  --light-text: #111827;
+  --light-card: #ffffff;
   }
   * {
     margin: 0;
