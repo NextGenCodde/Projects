@@ -1,11 +1,13 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  transition: all .3s;
+  transition: all 0.3s ease;
+  background-color: #0f172a;
+  color: white;
 }
 
 header {
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +18,7 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 #modeToggle {
@@ -31,46 +33,65 @@ h1 {
 
 main {
   padding: 2rem;
-  display: grid;
-  gap: 2rem;
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.1);
-  backdrop-filter: blur(10px);}
+  margin-bottom: 4rem;
+}
 
 h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
   color: #00c6ff;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
 .project {
-  margin-bottom: 1.5rem;
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+}
+
+.project img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .project h3 {
   margin: 0.5rem 0;
   color: #39ff14;
+  font-size: 1.2rem;
+}
+
+.project p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 .project a {
   color: #00c6ff;
+  font-weight: 600;
   text-decoration: none;
 }
 
 .project a:hover {
   text-decoration: underline;
-}
-
-.project img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .light-mode {
@@ -83,22 +104,23 @@ h2 {
   color: #000;
 }
 
-
 .light-mode h2 {
   color: #007cf0;
 }
 
-.light-mode .project h3 , .light-mode .project p {
-  color: white;
+.light-mode .project {
+  background-color: #ffffff;
+  color: #222;
+}
+
+.light-mode .project h3 {
+  color: #007f5f;
+}
+
+.light-mode .project p {
+  color: #444;
 }
 
 .light-mode .project a {
   color: #007cf0;
 }
-
-
-.bg-change {
-  background: #111827 !important;
-  color: white !important;
-}
-
