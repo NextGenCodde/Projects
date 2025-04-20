@@ -10,3 +10,16 @@ let section = document.querySelector('section')
     section[i].classList.toggle("bg-change")
   }
   });
+
+
+  let point = document.createElement("div")
+        point.setAttribute("class", "point")
+        document.body.append(point)
+        point.style.display = "none"
+        window.addEventListener("mousemove", function (e) {
+            let x_axis = e.clientX;
+            let y_axis = e.clientY;
+            point.style.display = "block"
+            point.style.top = `${y_axis + 10}px`
+            point.style.left = `${x_axis + 10}px`
+        })

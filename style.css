@@ -45,6 +45,17 @@ h2 {
   color: #00c6ff;
 }
 
+/* cursor  */
+
+.point{
+  position: fixed;
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  background: #007cf0;
+  transition: all .3s linear;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
